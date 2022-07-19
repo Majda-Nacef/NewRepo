@@ -1,20 +1,11 @@
 name: Github Actions Example
 
 on:
-  pull_request:
-  push:
-    branches: 
-      - master
-      - develop
+  push
 
 jobs:
-  test:
-    name: Running Units Tests
+  first-job:
     runs-on: windows-latest
-
     steps:
-   
-    - name: Install
-      run: npm install
-    - name: Test
-      run: npm test
+      run: node --version
+      run: npm --version
