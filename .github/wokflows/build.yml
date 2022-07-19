@@ -5,4 +5,4 @@ jobs:
     runs-on: windows-latest
     container: node:16.16.0
     steps:
-      run: node --version
+      - run: node --version
