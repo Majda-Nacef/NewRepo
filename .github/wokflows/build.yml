@@ -2,7 +2,7 @@ on:
   push
 jobs:
   first-job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     container: node:16.16.0
     steps:
       - run: node --version
